@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"linkedlist/internal"
+	"linkedlist/v1"
 )
 
 type Product struct {
@@ -11,7 +11,7 @@ type Product struct {
 }
 
 func main() {
-	ll := internal.NewLinkedList()
+	ll := v1.NewLinkedList()
 	ll.InsertHead(Product{ID: 1, Name: "p1"})
 	ll.InsertHead(Product{ID: 2, Name: "p2"})
 	ll.InsertTail(Product{ID: 3, Name: "p3"})
