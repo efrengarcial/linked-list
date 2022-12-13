@@ -1,3 +1,3 @@
-module linked-list
+module linkedlist
 
 go 1.19
