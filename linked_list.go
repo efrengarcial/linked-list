@@ -1,4 +1,4 @@
-package v1
+package linkedlist
 
 import "fmt"
 
@@ -19,7 +19,7 @@ type LinkedList struct {
 	length int
 }
 
-func NewLinkedList() *LinkedList {
+func New() *LinkedList {
 	return &LinkedList{
 		Head:   nil,
 		length: 0,

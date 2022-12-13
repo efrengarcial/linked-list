@@ -1,8 +1,9 @@
-package main
+package linkedlist_test
 
 import (
 	"fmt"
-	"linkedlist/v1"
+	"linkedlist"
+	"testing"
 )
 
 type Product struct {
@@ -10,8 +11,9 @@ type Product struct {
 	Name string `json:"name"`
 }
 
-func main() {
-	ll := v1.NewLinkedList()
+func TestLinkedList(t *testing.T) {
+
+	ll := linkedlist.New()
 	ll.InsertHead(Product{ID: 1, Name: "p1"})
 	ll.InsertHead(Product{ID: 2, Name: "p2"})
 	ll.InsertTail(Product{ID: 3, Name: "p3"})
@@ -26,5 +28,4 @@ func main() {
 	ll.Delete(2)
 	ll.Println()
 	fmt.Println("Length=", ll.Length())
-
 }
